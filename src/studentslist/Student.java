@@ -12,6 +12,7 @@ package studentslist;
  */
 public class Student {
    
+    private String DoB; 
     private String name;
     private int id;
  
@@ -38,11 +39,25 @@ public class Student {
     
     public void setId(int givenId)
     {
-            this.id = givenId;
+            id = givenId;
     }
     
     public int getId()
     {
         return id;
+    }
+
+    /**
+     * @return the DoB
+     */
+    public String getDoB() {
+        return DoB;
+    }
+
+    /**
+     * @param DoB the DoB to set
+     */
+    public void setDoB(String DoB) {
+        this.DoB = DoB;
     }
 }
